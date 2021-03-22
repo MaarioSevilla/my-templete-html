@@ -1,0 +1,69 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #FEE1CE;
+}
+.mybodymargins{
+  margin-left: 7em;
+  margin-right: 7em;
+  margin-left: 8.75vw;
+  margin-right: 8.75vw;
+}
+.__h1{
+  font-size: 8vw;
+  font-family: Georgia;
+  line-height: 1;
+  font-weight: 600; /* grosor */
+  color: white;
+  text-align: center;
+}
+.hola{
+  position: relative;
+  font-size: 200px;
+  font-family: Arial;
+  font-weight: bold;
+  color: block;
+  -webkit-text-stroke: .01em green;
+}
+.hola::before {
+  content: attr(data-char);
+  position: absolute;
+  z-index: -1;
+  -webkit-text-stroke: .03em white;
+}
+span {
+  position: relative;
+  font-size: 200px;
+  font-family: Arial;
+  font-weight: bold;
+  color: block;
+  -webkit-text-stroke: .01em green;
+}
+
+span::before {
+  content: attr(data-char);
+  position: absolute;
+  z-index: -1;
+  -webkit-text-stroke: .03em white;
+}
+h2{
+  color: #14161A;
+}
+
+.animationLeft{
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.moveEffectLeft{
+  animation: moveEffectLeft 1s;
+}
+
+@keyframes moveEffectLeft {
+  0%{
+    transform: translateX(60px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
